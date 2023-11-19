@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Warsaw service</title>
     <!-- Project fonts -->
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+      rel="stylesheet"
+    />
     <!-- Normalize -->
 
     <link
@@ -124,6 +127,7 @@
           <div class="general__title">
             <h1 class="what-do-we-do">
               Ремонт ноутбуков любых фирм
+              <br />
               <span class="guarantee">с гарантией 1 год</span>
             </h1>
             <h2 class="our-specialists">
@@ -132,9 +136,10 @@
             </h2>
           </div>
         </div>
-        <div class="title-img">
+        <div class="title-laptop">
           <img
-            src="./images/laptop/laptop-img.png"
+            class="title-laptop__img"
+            src="./images/laptop/mainBg.png"
             alt="Ноутбук на основной странице"
           />
         </div>
@@ -191,92 +196,312 @@
 
       <!--------------------------------------- Преимущества ------------------------------------------>
 
-      <!-- <section class="features">
-        <div class="features-box">
+      <section class="features">
+        <div class="container features-box">
+          <h2 class="features__title">Почему мы?</h2>
           <ul class="features-list">
             <li class="features-list__item">
               <img
-                src="path-to-expert-image.jpg"
+                class="features-list"
+                src="./images/features/man-icon.png"
                 alt="Опытные мастера"
                 class="features-list__img"
               />
-              <h3 class="features-list__title">Опытные мастера</h3>
-              <p class="features-list__text">
-                Стаж работы наших сотрудников не менее 5 лет
-              </p>
+              <div>
+                <h3 class="features-list__title">Опытные мастера</h3>
+                <p class="features-list__text">
+                  Стаж работы наших сотрудников не менее 5 лет
+                </p>
+              </div>
             </li>
             <li class="features-list__item">
               <img
-                src="path-to-parts-image.jpg"
+                class="features-list"
+                src="./images/features/detail.png"
                 alt="Оригинальные запчасти"
                 class="features-list__img"
               />
-              <h3 class="features-list__title">Оригинальные запчасти</h3>
-              <p class="features-list__text">
-                Мы закажем оригинальные запчасти
-              </p>
+              <div>
+                <h3 class="features-list__title">Оригинальные запчасти</h3>
+                <p class="features-list__text">
+                  Мы закажем оригинальные запчасти
+                </p>
+              </div>
             </li>
             <li class="features-list__item">
               <img
-                src="path-to-repair-image.jpg"
+                class="features-list"
+                src="./images/features/computer.png"
                 alt="Быстрый мелкий ремонт"
                 class="features-list__img"
               />
-              <h3 class="features-list__title">Быстрый мелкий ремонт</h3>
-              <p class="features-list__text">
-                Устранение мелких поломок в течении 30 минут
-              </p>
+              <div>
+                <h3 class="features-list__title">Быстрый мелкий ремонт</h3>
+                <p class="features-list__text">
+                  Устранение мелких поломок в течении 30 минут
+                </p>
+              </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--------------------------------------- Что мы делаем ------------------------------------------>
 
-      <!-- <section class="how-we-work">
-        <nav aria-label="Progress">
-          <ol class="progress-bar">
-            <li class="step-active">
-              <div class="step-number">1</div>
-              <p class="step-description">Опис кроку 1</p>
+      <section class="how-we-work">
+        <div class="container how-we-work_width">
+          <h2 class="how-we-work__job">Как мы работаем?</h2>
+          <ul class="how-we-work__list">
+            <li class="how-we-work__item">
+              <div class="circle">
+                <img
+                  class="circle__number"
+                  src="./images/processChain/1.png"
+                  alt="Цифра один"
+                />
+                <div class="bar"></div>
+              </div>
+              <div class="how-we-work__information">
+                <h3 class="how-we-work__title">Заявка</h3>
+                <p class="how-we-work__text">
+                  Оставьте заявку на сайте или позвоните по номеру + 48 790 560
+                  389
+                </p>
+              </div>
             </li>
-            <li class="step">
-              <div class="step-number">2</div>
-              <p class="step-description">Опис кроку 2</p>
+            <li>
+              <div class="circle">
+                <img
+                  class="circle__number"
+                  src="./images/processChain/2.png"
+                  alt="Цифра два"
+                />
+                <div class="bar"></div>
+              </div>
+              <div class="how-we-work__information">
+                <h3 class="how-we-work__title">Диагностика</h3>
+                <p class="how-we-work__text">
+                  Диагностируем ноутбук и предлагаем варианты ремонта и
+                  стоимость
+                </p>
+              </div>
             </li>
-            <li class="step">
-              <div class="step-number">3</div>
-              <p class="step-description">Опис кроку 3</p>
+            <li>
+              <div class="circle">
+                <img
+                  class="circle__number"
+                  src="./images/processChain/3.png"
+                  alt="Цифра три"
+                />
+                <div class="bar"></div>
+              </div>
+              <div class="how-we-work__information">
+                <h3 class="how-we-work__title">Ремонт</h3>
+                <p class="how-we-work__text">
+                  Оформляем подтверждение, что устройство в сервисе и устраняем
+                  неполадки
+                </p>
+              </div>
             </li>
-            <li class="step">
-              <div class="step-number">4</div>
-              <p class="step-description">Опис кроку 4</p>
+            <li>
+              <div class="circle">
+                <img
+                  class="circle__number"
+                  src="./images/processChain/4.png"
+                  alt="Цифра четыре"
+                />
+              </div>
+              <div class="bar"></div>
+              <div class="how-we-work__information">
+                <h3 class="how-we-work__title">Выдача</h3>
+                <p class="how-we-work__text">
+                  Сообщаем о готовности, проверяем технику при Вас и выдаем
+                  гарантию на ноутбук
+                </p>
+              </div>
             </li>
-          </ol>
-        </nav>
-      </section> -->
+          </ul>
+        </div>
+      </section>
 
       <!--------------------------------------- Наши цены ------------------------------------------>
-      <!-- <section class="price-list">
+      <section class="price-list">
         <div class="container">
-          <section class="service-section">
-            <h2>Ремонт ноутбука</h2>
-            <ul class="service-list">
-              <li>Заміна матриці <span class="price">від 1900 грн</span></li>
-              <li>Заміна клавіатури <span class="price">від 650 грн</span></li>
-              <!-- Додайте інші пункти тут -->
-      <!-- </ul>
-          </section>
+          <h2 class="price__title">Услуги</h2>
+          <div class="button__list" id="button">
+            <button class="price__btn" onclick="showPrices('notebooks')">
+              <img
+                class="btn__img"
+                src="./images/price-img/laptop-icon.png"
+                alt="Ноутбук"
+              />
+              Ноутбуки
+            </button>
+            <button class="price__btn" onclick="showPrices('pcs')">
+              <img
+                class="btn__img"
+                src="./images/price-img/computer-icon.png"
+                alt="Компютер"
+              />
+              Компютеры
+            </button>
+            <button class="price__btn" onclick="showPrices('phones')">
+              <img
+                class="btn__img"
+                src="./images/price-img/phone-icon.png"
+                alt="Телефон"
+              />
+              Телефоны
+            </button>
+          </div>
 
-          <section class="service-section">
-            <h2>Установка програмного забезпечення</h2>
-            <ul class="service-list">
-              <li>Установка Windows <span class="price">300 грн</span></li>
-              <!-- Додайте інші пункти тут -->
-      <!-- </ul>
-          </section>
+          <div class="laptop prices">
+            <table class="price__table">
+              <tr class="price__list">
+                <td class="price__item">Замена матрицы</td>
+                <td class="price__item price__item_bold">от 100 зл</td>
+                <td class="price__item">Установка Windows</td>
+                <td class="price__item price__item_bold">от 100 зл</td>
+              </tr>
+              <tr class="price__list">
+                <td class="price__item">Замена клавиатуры</td>
+                <td class="price__item price__item_bold">от 50 зл</td>
+                <td class="price__item">Восстановление информации</td>
+                <td class="price__item price__item_bold">от 50 зл</td>
+              </tr>
+              <tr class="price__list">
+                <td class="price__item">Замена разъёма зарядного устройства</td>
+                <td class="price__item price__item_bold">от 100 зл</td>
+                <td class="price__item">Удаление вирусов</td>
+                <td class="price__item price__item_bold">от 50 зл</td>
+              </tr>
+              <tr class="price__list">
+                <td class="price__item">Замена материнской платы</td>
+                <td class="price__item price__item_bold">от 150 зл</td>
+                <td class="price__item">Установка драйверов на видеокарту</td>
+                <td class="price__item price__item_bold">от 50 зл</td>
+              </tr>
+              <tr class="price__list">
+                <td class="price__item">Замена видеокарты</td>
+                <td class="price__item price__item_bold">от 500 зл</td>
+                <td class="price__item">Установка всех драйверов</td>
+                <td class="price__item price__item_bold">от 50 зл</td>
+              </tr>
+              <tr class="price__list">
+                <td class="price__item">Замена корпуса ноутбука</td>
+                <td class="price__item price__item_bold">от 100 зл</td>
+                <td class="price__item">Замена термопасты</td>
+                <td class="price__item price__item_bold">от 150 зл</td>
+              </tr>
+              <tr class="price__list">
+                <td class="price__item">Чистка от пыли</td>
+                <td class="price__item price__item_bold">от 150 зл</td>
+                <td class="price__item">Установка прочих ОС</td>
+                <td class="price__item price__item_bold">от 50 зл</td>
+              </tr>
+            </table>
+          </div>
+
+          <!---------------------------------Computer------------------------------- -->
+
+          <div class="computer prices">
+            <table class="price__table">
+              <tr class="price__list">
+                <td class="price__item">Чистка системы охлаждения</td>
+                <td class="price__item price__item_bold">от 200 зл</td>
+                <td class="price__item">Замена DVD-привода</td>
+                <td class="price__item price__item_bold">
+                  от 150 зл + цена привода
+                </td>
+              </tr>
+              <tr class="price__list">
+                <td class="price__item">
+                  Установка Windows <br />
+                  и программного обеспечения
+                </td>
+                <td class="price__item price__item_bold">от 150 зл</td>
+                <td class="price__item">
+                  Замена видеокарты + <br />
+                  настройка + тесты
+                </td>
+                <td class="price__item price__item_bold">
+                  от 150 зл + цена видеокарты
+                </td>
+              </tr>
+              <tr class="price__list">
+                <td class="price__item">Удаление вирусов</td>
+                <td class="price__item price__item_bold">от 50 зл</td>
+                <td class="price__item">Замена блока питания</td>
+                <td class="price__item price__item_bold">
+                  от 150 зл + цена блока
+                </td>
+              </tr>
+              <tr class="price__list">
+                <td class="price__item">
+                  Замена жесткого диска <br />
+                  на новый <br />
+                  (HDD 1ТБ/SSD 240ГБ) <br />+ система + ПО + копирование данных
+                </td>
+                <td class="price__item price__item_bold">от 350 зл</td>
+                <td class="price__item">
+                  Замена материнской платы <br />
+                  (в комплект входят новые <br />
+                  термопасты)
+                </td>
+                <td class="price__item price__item_bold">
+                  от 200 зл + цена платы
+                </td>
+              </tr>
+              <tr class="price__list">
+                <td class="price__item">Сборка настольных ПК</td>
+                <td class="price__item price__item_bold">от 100 зл</td>
+                <td class="price__item">
+                  Загрузка/обновление BIOS <br />
+                  с помощью программатора
+                </td>
+                <td class="price__item price__item_bold">от 150 зл</td>
+              </tr>
+            </table>
+          </div>
+          <!-- -------------------------------Phone ------------------- -->
+          <div class="phone prices">
+            <table class="phone-price__table">
+              <tr class="price__list">
+                <td class="price__item">Ремонт програмного обеспечения</td>
+                <td class="price__item price__item_bold">от 90 грн</td>
+              </tr>
+              <tr class="price__list">
+                <td class="price__item">Ремонт запитного телефона</td>
+                <td class="price__item price__item_bold">
+                  от 150 грн + цена запчастей
+                </td>
+              </tr>
+              <tr class="price__list">
+                <td class="price__item">
+                  Восстановление данных с запитого телефона
+                </td>
+                <td class="price__item price__item_bold">от 200 грн</td>
+              </tr>
+              <tr class="price__list">
+                <td class="price__item">
+                  Снятие блокировки FRP Google-аккаунта
+                </td>
+                <td class="price__item price__item_bold">от 150 грн</td>
+              </tr>
+              <tr class="price__list">
+                <td class="price__item">Замена разъема зарядки</td>
+                <td class="price__item price__item_bold">от 150 грн</td>
+              </tr>
+              <tr class="price__list">
+                <td class="price__item">Ремонт разбитого экрана</td>
+                <td class="price__item price__item_bold">
+                  от 150 грн + цена экрана
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
-      </section> -->
+      </section>
 
       <!--------------------------------------- Как с нами связаться ------------------------------------------>
 

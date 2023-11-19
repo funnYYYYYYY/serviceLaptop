@@ -1,0 +1,92 @@
+.progress-bar {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+}
+
+.how-we-work__list {
+  @extend %list;
+  display: flex;
+  text-align: center;
+
+  gap: 225px;
+}
+
+.feature-list {
+  width: 1445px;
+}
+
+.procces {
+  position: relative;
+}
+
+.how-we-work__title {
+  margin-bottom: 70px;
+  margin-left: 630px;
+}
+.circle {
+  position: relative;
+  width: 131px;
+  height: 131px;
+  background-color: rgba(255, 214, 0, 1);
+  border-radius: 50%;
+  position: relative;
+
+  display: inline-block;
+}
+
+.how-we-work__item {
+}
+
+.bar {
+  width: 400px;
+  height: 5px;
+  background-color: rgba(255, 214, 0, 1);
+  position: absolute;
+  top: 50%;
+  left: 100%;
+}
+
+.circle__number {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 38px;
+}
+
+.how-we-work__job {
+  margin-bottom: 70px;
+  margin-left: 630px;
+
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57px;
+  color: $accent-color;
+}
+
+.how-we-work__item {
+}
+
+.how-we-work__information {
+  margin-top: 30px;
+
+  width: 200px;
+}
+
+.how-we-work__title {
+  display: contents;
+}
+
+.how-we-work__text {
+  margin-top: 14px;
+}
+
+.step-active {
+}
+.step-number {
+}
+.progress-bar__title {
+}
+.step-description {
+}
+.step {
+}

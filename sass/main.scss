@@ -1,0 +1,39 @@
+// ----------------------UTILS---------------
+@import "./utils/variable";
+@import "./utils/visually-hidden";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+// ------------BASE------------
+@import "./base/start";
+@import "./base/reset";
+
+// ----------------------BUTTONS-----------
+
+// @import "./components/primary-btn";
+// @import "./components/button-portfolio";
+// @import "./components/button-footer";
+// @import "./components/moddal-button";
+// @import "./components/modal_submit";
+
+// ----------------------COMPONENTS-----------
+@import "./components/header";
+@import "./components/general-information";
+@import "./components/our-job";
+@import "./components/lapTop-image"; // @import "./components/container";
+// @import "./components/section";
+// @import "./components/title-sections-three-for";
+// @import "./components/container-footer";
+// @import "./components/modal";
+// @import "./components/backdrop";
+
+// ----------------------LAYOUT-----------
+
+// @import "./layout/header";
+// @import "./layout/section-one";
+// @import "./layout/section-two";
+// @import "./layout/section-three";
+// @import "./layout/section-for";
+// @import "./layout/section-five";
+// @import "./layout/portfolio";
+// @import "./layout/footer";

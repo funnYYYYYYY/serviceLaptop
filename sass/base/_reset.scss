@@ -1,0 +1,26 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(255, 251, 230, 1);
+  color: $accent-color;
+  font-size: $font-size;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

@@ -1,0 +1,148 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &_img {
+    width: 158px;
+    height: 54px;
+    background-color: transparent;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-list {
+  list-style-type: none;
+  &:first-child {
+    margin-left: 50px;
+  }
+
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list__gap {
+  gap: 50px;
+}
+
+.nav-list__item {
+  color: $accent-color;
+  font-size: $font-size;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  &:hover,
+  :focus {
+    color: rgba(255, 214, 0, 1);
+  }
+}
+
+.header .container {
+  display: flex;
+
+  align-items: center;
+}
+
+.header-list__item_margin {
+  margin-left: 80px;
+}
+
+.item-link {
+  @extend %link;
+  color: $accent-color;
+}
+
+.dropbtn {
+  background-color: $accent-background-color;
+
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  color: black;
+
+  &:hover,
+  :focus {
+    color: rgba(255, 214, 0, 1);
+  }
+}
+
+.dropdown {
+  position: relative;
+  margin-left: 25px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  font-size: $font-size;
+  display: none;
+  position: absolute;
+  background-color: $accent-background-color;
+
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn__arrow {
+  position: absolute;
+  margin-left: -18px;
+}
+
+.nav-list__link {
+  position: relative;
+  @extend %link;
+  color: $accent-color;
+
+  &:hover,
+  :focus {
+    color: rgba(255, 214, 0, 1);
+  }
+}
+
+.nav-list__img {
+  position: absolute;
+  margin-left: -25px;
+  top: -5px;
+}
+
+.dropdown-content__link {
+  &:hover,
+  :focus {
+    color: rgba(255, 214, 0, 1);
+  }
+}

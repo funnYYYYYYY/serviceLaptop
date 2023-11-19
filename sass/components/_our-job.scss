@@ -1,0 +1,14 @@
+.that-we-provide {
+  @extend %list;
+  display: flex;
+  gap: 45px;
+}
+.that-we-provide__list {
+  font-size: 18px;
+  max-width: 250px;
+  height: 110px;
+}
+
+.that-we-provide__img {
+  margin-bottom: 15px;
+}

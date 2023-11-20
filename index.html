@@ -329,7 +329,7 @@
         <div class="container">
           <h2 class="price__title">Услуги</h2>
           <div class="button__list" id="button">
-            <button class="price__btn" onclick="showPrices('notebooks')">
+            <button class="price__btn" data-category="laptop">
               <img
                 class="btn__img"
                 src="./images/price-img/laptop-icon.png"
@@ -337,7 +337,7 @@
               />
               Ноутбуки
             </button>
-            <button class="price__btn" onclick="showPrices('pcs')">
+            <button class="price__btn" data-category="computer">
               <img
                 class="btn__img"
                 src="./images/price-img/computer-icon.png"
@@ -345,7 +345,7 @@
               />
               Компютеры
             </button>
-            <button class="price__btn" onclick="showPrices('phones')">
+            <button class="price__btn" data-category="phone">
               <img
                 class="btn__img"
                 src="./images/price-img/phone-icon.png"
@@ -355,7 +355,7 @@
             </button>
           </div>
 
-          <div class="laptop price">
+          <div class="laptop prices visually-hidden">
             <table class="price__table">
               <tr class="price__list">
                 <td class="price__item">Замена матрицы</td>
@@ -404,7 +404,7 @@
 
           <!---------------------------------Computer------------------------------- -->
 
-          <div class="computer price">
+          <div class="computer prices visually-hidden">
             <table class="price__table">
               <tr class="price__list">
                 <td class="price__item">Чистка системы охлаждения</td>
@@ -464,7 +464,7 @@
             </table>
           </div>
           <!-- -------------------------------Phone ------------------- -->
-          <div class="phone price">
+          <div class="phone prices visually-hidden">
             <table class="phone-price__table">
               <tr class="price__list">
                 <td class="price__item">Ремонт програмного обеспечения</td>
@@ -556,5 +556,6 @@
 
   <!-- </body>
 </html> -->
+    <script src="./js/buttonPrice.js"></script>
   </body>
 </html>

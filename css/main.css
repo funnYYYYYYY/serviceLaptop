@@ -447,6 +447,10 @@ img {
   color: rgb(0, 0, 0);
 }
 
+.prices {
+  display: none;
+}
+
 .price__btn {
   font-size: 24px;
   font-weight: 600;

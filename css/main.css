@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -12,7 +13,7 @@
   overflow: hidden;
 }
 
-.how-we-work__list, .that-we-provide, .social-media-list__item {
+.info__item, .how-we-work__list, .that-we-provide, .social-media-list__item {
   list-style: none;
 }
 
@@ -238,24 +239,6 @@ img {
   padding-top: 50px;
 }
 
-.primary-btn {
-  width: 250px;
-  height: 65px;
-  border: none;
-  color: rgb(246, 246, 246);
-  background-color: rgb(0, 0, 0);
-  -webkit-box-shadow: 6px 9px 0px -2px rgb(255, 226, 77);
-          box-shadow: 6px 9px 0px -2px rgb(255, 226, 77);
-  cursor: pointer;
-}
-.primary-btn:hover,
-.primary-btn :focus {
-  background-color: rgb(255, 226, 77);
-  -webkit-box-shadow: 6px 9px 0px -2px rgb(0, 0, 0);
-          box-shadow: 6px 9px 0px -2px rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
-}
-
 .that-we-provide {
   margin-top: 100px;
 }
@@ -317,7 +300,7 @@ img {
 
 .features__title {
   margin-bottom: 70px;
-  margin-left: 630px;
+  text-align: center;
   font-size: 48px;
   font-weight: 600;
   line-height: 57px;
@@ -418,7 +401,7 @@ img {
 
 .how-we-work__job {
   margin-bottom: 70px;
-  margin-left: 630px;
+  text-align: center;
   font-size: 48px;
   font-weight: 600;
   line-height: 57px;
@@ -440,7 +423,7 @@ img {
 
 .price__title {
   margin-bottom: 70px;
-  margin-left: 630px;
+  text-align: center;
   font-size: 48px;
   font-weight: 600;
   line-height: 57px;
@@ -455,6 +438,7 @@ img {
   height: 120px;
   border: 1px solid rgb(0, 0, 0);
   background-color: rgb(255, 251, 230);
+  color: rgb(0, 0, 0);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -518,4 +502,184 @@ img {
   height: 388px;
   border: 1px solid rgb(0, 0, 0);
   width: 1440px;
+}
+
+.active {
+  background-color: rgb(255, 214, 0);
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.form-container {
+  width: 50%;
+  background-color: #f8f8f8;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contacts__title {
+  font-size: 48px;
+  margin-bottom: 48px;
+  font-weight: 600;
+  line-height: 59px;
+}
+
+.contacts__text {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  margin-bottom: 57px;
+}
+
+.image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts-us-form {
+  width: 469px;
+}
+
+.form {
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__size {
+  padding-left: 30px;
+  font-size: 24px;
+  height: 80px;
+  width: 467px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.form__size_textarea {
+  padding-left: 30px;
+  padding-top: 30px;
+  font-size: 24px;
+  height: 230px;
+  width: 467px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.contacts-form,
+.image-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; /* кожен дитячий елемент займатиме 50% ширини контейнера */
+  min-width: 0; /* це запобігає виходженню елементів за межі контейнера на невеликих екранах */
+}
+
+.image-container {
+  /* ваші стилі для контейнера зображення */
+  background-size: cover; /* припустимо, що ви хочете покрити всю область зображенням */
+  background-position: center; /* центрування зображення в контейнері */
+}
+
+.primary-btn {
+  width: 250px;
+  height: 65px;
+  border: none;
+  color: rgb(246, 246, 246);
+  background-color: rgb(0, 0, 0);
+  -webkit-box-shadow: 6px 9px 0px -2px rgb(255, 226, 77);
+          box-shadow: 6px 9px 0px -2px rgb(255, 226, 77);
+  cursor: pointer;
+}
+.primary-btn:hover,
+.primary-btn :focus {
+  background-color: rgb(255, 226, 77);
+  -webkit-box-shadow: 6px 9px 0px -2px rgb(0, 0, 0);
+          box-shadow: 6px 9px 0px -2px rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+.footer__title {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-family: 500;
+  line-height: 22px;
+  text-align: center;
+}
+
+.data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.info {
+  width: 50%;
+}
+
+.map {
+  width: 100%;
+  text-align: center;
+}
+
+.info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.data__title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  margin-bottom: 68px;
+}
+
+.info__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 9px;
+}
+
+.info__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.info__list {
+  gap: 39px;
+  display: grid;
+}
+
+.info__item__margin {
+  margin-left: 34px;
 }/*# sourceMappingURL=main.css.map */

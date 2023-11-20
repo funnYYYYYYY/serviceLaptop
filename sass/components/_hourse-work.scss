@@ -1,0 +1,51 @@
+.data {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.info {
+  width: 50%;
+}
+
+.map {
+  width: 100%;
+  text-align: center;
+}
+
+.info__item {
+  display: flex;
+  align-items: center;
+  @extend %list;
+}
+
+.data__title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+
+  margin-bottom: 68px;
+}
+
+.info__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+
+  margin-bottom: 9px;
+}
+
+.info__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.info__list {
+  gap: 39px;
+  display: grid;
+}
+
+.info__item__margin {
+  margin-left: 34px;
+}

@@ -1,6 +1,6 @@
 .price__title {
   margin-bottom: 70px;
-  margin-left: 630px;
+  text-align: center;
   font-size: 48px;
   font-weight: 600;
   line-height: 57px;
@@ -16,6 +16,8 @@
   height: 120px;
   border: 1px solid $accent-color;
   background-color: $accent-background-color;
+
+  color: $accent-color;
 
   display: flex;
   justify-content: center;

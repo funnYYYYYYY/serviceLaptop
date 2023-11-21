@@ -41,6 +41,7 @@
 
 .price__table {
   padding-left: 100px;
+
   padding-right: 100px;
   padding-top: 60px;
   padding-bottom: 21px;
@@ -69,4 +70,13 @@
 .price__list {
   padding-left: 100px;
   padding-right: 100px;
+}
+
+.image__people {
+  position: relative;
+}
+
+.image__bcg {
+  position: absolute;
+  margin-left: 200px;
 }

@@ -1,5 +1,18 @@
 .information {
   position: relative;
+  display: flex;
+}
+
+.general__title {
+  position: relative;
+  width: 789px;
+  height: 487px;
+}
+
+.title-laptop {
+  position: absolute;
+  margin-top: -144px;
+  margin-left: 750px;
 }
 
 .what-do-we-do {
@@ -24,6 +37,7 @@
 }
 
 .general__social {
+  margin-top: 85px;
   display: flex;
   align-items: center;
 }

@@ -20,13 +20,9 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Custom styles -->
-
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="body">
-    <!-- ---------------------------------------------Header---------------------------------------- -->
-
     <header class="header">
       <div class="container">
         <div class="logo">
@@ -40,8 +36,7 @@
         <nav class="menu">
           <ul class="nav-list">
             <li class="nav-list__item">Услуги</li>
-            <li class="nav-list__item">Гарантия</li>
-            <li class="nav-list__item">Отзивы</li>
+            <li class="nav-list__item">Как мы работаем</li>
             <li class="nav-list__item">Контакты</li>
           </ul>
         </nav>
@@ -86,7 +81,7 @@
           <div class="dropdown-content" aria-labelledby="dropbtn">
             <a
               class="dropdown-content__link"
-              href="/uk/"
+              href="./ukrainianLanguage.html"
               hreflang="uk-UA"
               title="Переглянути українську версію"
               >UKR</a
@@ -117,8 +112,6 @@
       </div>
     </header>
 
-    <!-- ------------------------------------- Main ------------------------------------------>
-
     <main>
       <!--------------------------------------- Главная информация ------------------------------------------>
 
@@ -130,40 +123,42 @@
               <br />
               <span class="guarantee">с гарантией 1 год</span>
             </h1>
-            <h2 class="our-specialists">
+            <p class="our-specialists">
               Сертификация наших специалистов у ведущих производителей ноутбуков
               каждые 3 месяца
-            </h2>
+            </p>
+            <div class="general__social">
+              <button type="button" class="primary-btn">Заказать ремонт</button>
+              <ul class="social-media-list">
+                <li class="social-media-list__item">
+                  <a href="" class="social-media__link">
+                    <img
+                      src="./images/social-media/instagram-icon.png"
+                      alt="Иконка инстаграма"
+                  /></a>
+                </li>
+
+                <li class="social-media-list__item">
+                  <a href="" class="social-media__link">
+                    <img
+                      src="./images/social-media/fb-icon.png"
+                      alt="Иконка Фейсбука"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="title-laptop">
+            <img
+              class="title-laptop__img"
+              src="./images/img-bck/nout_final.png"
+              alt="Ноутбук на основной странице"
+            />
           </div>
         </div>
-        <!-- <div class="title-laptop">
-          <img
-            class="title-laptop__img"
-            src="./images/laptop/mainBg.png"
-            alt="Ноутбук на основной странице"
-          />
-        </div> -->
-        <div class="container general__social">
-          <button type="button" class="primary-btn">Заказать ремонт</button>
-          <ul class="social-media-list">
-            <li class="social-media-list__item">
-              <a href="" class="social-media__link">
-                <img
-                  src="./images/social-media/instagram-icon.png"
-                  alt="Иконка инстаграма"
-              /></a>
-            </li>
-
-            <li class="social-media-list__item">
-              <a href="" class="social-media__link">
-                <img
-                  src="./images/social-media/fb-icon.png"
-                  alt="Иконка Фейсбука"
-              /></a>
-            </li>
-          </ul>
-        </div>
-
+      </section>
+      <!--------------------------------------- Нашие приемущества ------------------------------------------>
+      <section>
         <div class="container">
           <ul class="that-we-provide">
             <li class="that-we-provide__list">
@@ -326,7 +321,7 @@
 
       <!--------------------------------------- Наши цены ------------------------------------------>
       <section class="price-list">
-        <div class="container">
+        <div class="container shadow">
           <h2 class="price__title">Услуги</h2>
           <div class="button__list" id="button">
             <button class="price__btn" data-category="laptop">
@@ -513,13 +508,20 @@
               Заполните форму и узнайте стоимость и время ремонта вашего
               ноутбука
             </p>
-            <form class="form">
+            <form
+              id="myForm"
+              class="form"
+              action="https://formspree.io/f/meqbwwrp"
+              method="POST"
+            >
               <input
                 class="form__size"
                 type="text"
                 id="name"
                 name="name"
                 placeholder="Имя"
+                title="Только буквы"
+                required
               />
               <input
                 class="form__size"
@@ -527,18 +529,26 @@
                 id="phone"
                 name="phone"
                 placeholder="Номер телефона"
+                required
               />
               <textarea
                 class="form__size_textarea"
                 id="description"
                 name="description"
                 placeholder="Опишите поломку"
+                required
               ></textarea>
               <button class="primary-btn" type="submit">Заказать ремонт</button>
             </form>
           </div>
           <div class="image-container">
             <img
+              class="image__bcg"
+              src="./images/img-bck/eclipse.png"
+              alt="Желтый фон"
+            />
+            <img
+              class="image__people"
               src="./images/img-contacts/image-man.png"
               alt="Человек с ноутбкуком"
             />
@@ -550,6 +560,13 @@
       <section>
         <div class="container">
           <div class="data">
+            <div class="info-bcg">
+              <img
+                class="info-bcg__img"
+                src="./images/img-bck/elipse-bg-contacts (2).png"
+                alt="Желтый фон"
+              />
+            </div>
             <div class="info">
               <h2 class="data__title">Контакты:</h2>
               <ul class="info__list">

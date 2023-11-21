@@ -1,6 +1,11 @@
 .contacts {
   display: flex;
   height: 100%;
+  background: radial-gradient(
+    30% 50% at 65% 50%,
+    rgba(128, 107, 0, 0.2) 0%,
+    rgba(255, 214, 0, 0) 100%
+  );
 }
 
 .form-container {
@@ -57,37 +62,8 @@
   width: 467px;
 }
 
-button {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: blue;
-  color: white;
-  cursor: pointer;
-}
-
 .contacts-form,
 .image-container {
-  flex: 1; /* кожен дитячий елемент займатиме 50% ширини контейнера */
-  min-width: 0; /* це запобігає виходженню елементів за межі контейнера на невеликих екранах */
+  flex: 1;
+  min-width: 0;
 }
-
-.image-container {
-  /* ваші стилі для контейнера зображення */
-  background-size: cover; /* припустимо, що ви хочете покрити всю область зображенням */
-  background-position: center; /* центрування зображення в контейнері */
-}
-
-// .image-container::before {
-//   content: "";
-//   background: url("path-to-man-image.jpg") center center no-repeat;
-//   background-size: cover;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   width: 200px; /* adjust as necessary */
-//   height: 200px; /* adjust as necessary */
-//   border-radius: 50%;
-//   box-shadow: 0 0 0 1000px #ffe680; /* large shadow to create the yellow circle */
-// }

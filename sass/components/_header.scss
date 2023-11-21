@@ -1,3 +1,16 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: $accent-background-color;
+}
+
+.main {
+  padding-top: 84px;
+}
+
 .logo {
   cursor: pointer;
   display: flex;
@@ -62,6 +75,10 @@
 .item-link {
   @extend %link;
   color: $accent-color;
+}
+
+.nav-lis__id {
+  @extend %link;
 }
 
 .dropbtn {

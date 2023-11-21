@@ -55,7 +55,7 @@ img {
 }
 
 .container {
-  width: 1920px;
+  width: 1666px;
   padding-left: 100px;
   padding-right: 100px;
   margin-left: auto;
@@ -125,7 +125,7 @@ img {
 }
 
 .nav-list__gap {
-  gap: 50px;
+  gap: 75px;
 }
 
 .nav-list__item {
@@ -245,12 +245,17 @@ img {
 
 .title-laptop {
   position: absolute;
-  margin-top: -144px;
-  margin-left: 750px;
+  margin-left: 697px;
+}
+
+.title-bcg {
+  position: absolute;
+  margin-left: 680px;
+  margin-top: 220px;
 }
 
 .what-do-we-do {
-  font-size: 64px;
+  font-size: 60px;
   font-weight: 800;
   line-height: 78px;
 }

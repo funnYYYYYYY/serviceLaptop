@@ -55,7 +55,7 @@ img {
 }
 
 .container {
-  width: 1920px;
+  width: 1800px;
   padding-left: 100px;
   padding-right: 100px;
   margin-left: auto;
@@ -157,7 +157,7 @@ img {
 }
 
 .header-list__item_margin {
-  margin-left: 80px;
+  margin-left: 147px;
 }
 
 .item-link {
@@ -179,8 +179,7 @@ img {
 
 .dropdown {
   position: relative;
-  margin-left: 110px;
-  display: inline-block;
+  margin-left: auto;
 }
 
 .dropdown-content {
@@ -191,6 +190,7 @@ img {
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  right: 0;
 }
 
 .dropdown-content a {
@@ -220,7 +220,7 @@ img {
 
 .nav-list__img {
   position: absolute;
-  margin-left: -25px;
+  margin-left: -30px;
   top: -5px;
 }
 
@@ -250,8 +250,9 @@ img {
 
 .title-lampot__img {
   width: 100%;
-  margin-left: 280px;
-  margin-top: -269px;
+  width: 70%;
+  margin-left: 595px;
+  margin-top: -223px;
 }
 
 .title-lampot__eclipse {
@@ -263,13 +264,14 @@ img {
 .title-laptop {
   position: relative;
   margin-top: -67px;
-  margin-left: -66px;
+  margin-left: 48px;
 }
 
 > .title-laptop__img {
   position: relative;
-  margin-top: -260px;
-  margin-left: 500px;
+  width: 70%;
+  margin-left: 595px;
+  margin-top: -233px;
 }
 
 .what-do-we-do {
@@ -378,7 +380,7 @@ img {
 }
 
 .features-list__item {
-  width: 466px;
+  width: 513px;
   height: 190px;
   border: 1px solid black;
   display: -webkit-box;
@@ -395,7 +397,6 @@ img {
 }
 
 .features-list__item_upgrade {
-  width: 472px;
   gap: 10px;
 }
 
@@ -439,7 +440,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  gap: 130px;
+  gap: 148px;
 }
 
 .feature-list {
@@ -542,7 +543,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 90px;
+  gap: 159px;
 }
 
 .btn__img {
@@ -556,7 +557,7 @@ img {
   padding-bottom: 21px;
   height: 388px;
   border: 1px solid rgb(0, 0, 0);
-  width: 1440px;
+  width: 1580px;
 }
 
 .prices {
@@ -583,12 +584,12 @@ img {
 
 .image__people {
   position: relative;
-  margin-right: 66px;
+  margin-right: -340px;
 }
 
 .image__bcg {
   position: absolute;
-  margin-left: 266px;
+  margin-left: 435px;
 }
 
 .phone-price__table {
@@ -598,7 +599,7 @@ img {
   padding-bottom: 74px;
   height: 388px;
   border: 1px solid rgb(0, 0, 0);
-  width: 1440px;
+  width: 1580px;
 }
 
 .active {
@@ -731,7 +732,7 @@ img {
 
 .map {
   width: 100%;
-  margin-left: 130px;
+  margin-left: 403px;
 }
 
 .info__item {

@@ -9,7 +9,7 @@
   display: flex;
   text-align: center;
 
-  gap: 225px;
+  gap: 130px;
 }
 
 .feature-list {
@@ -21,8 +21,13 @@
 }
 
 .how-we-work__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+
   margin-bottom: 70px;
   margin-left: 630px;
+  display: contents;
 }
 .circle {
   position: relative;
@@ -39,7 +44,7 @@
 }
 
 .bar {
-  width: 400px;
+  width: 300px;
   height: 5px;
   background-color: rgba(255, 214, 0, 1);
   position: absolute;
@@ -58,7 +63,7 @@
   text-align: center;
 
   font-size: 48px;
-  font-weight: 600;
+  // font-weight: 600;
   line-height: 57px;
   color: $accent-color;
 }
@@ -69,14 +74,15 @@
 .how-we-work__information {
   margin-top: 30px;
 
-  width: 200px;
-}
-
-.how-we-work__title {
-  display: contents;
+  width: 283px;
 }
 
 .how-we-work__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  width: 283px;
+
   margin-top: 14px;
 }
 

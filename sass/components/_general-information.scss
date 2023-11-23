@@ -1,26 +1,43 @@
 .information {
-  position: relative;
   display: flex;
-}
 
-.general__title {
-  position: relative;
-  width: 789px;
-  height: 487px;
   margin-top: 120px;
 }
 
-.title-laptop {
-  position: absolute;
-
-  margin-left: 697px;
+.calc {
+  width: calc(50%);
 }
 
-.title-bcg {
-  position: absolute;
+.general__title {
+  z-index: 100;
+}
 
-  margin-left: 680px;
-  margin-top: 220px;
+.title-lampot__bcg {
+  position: absolute;
+}
+
+.title-lampot__img {
+  width: 100%;
+  margin-left: 280px;
+  margin-top: -269px;
+}
+
+.title-lampot__eclipse {
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 150px;
+}
+
+.title-laptop {
+  position: relative;
+  margin-top: -67px;
+  margin-left: -66px;
+}
+
+> .title-laptop__img {
+  position: relative;
+  margin-top: -260px;
+  margin-left: 500px;
 }
 
 .what-do-we-do {

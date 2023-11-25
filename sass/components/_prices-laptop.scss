@@ -1,23 +1,27 @@
 .price__title {
   margin-bottom: 70px;
   text-align: center;
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 57px;
-  color: $accent-color;
+
+  color: rgba(0, 0, 0, 1);
+
+  @include laptop {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48.76px;
+  }
+
+  @include desktop {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57px;
+  }
 }
 
 .price__btn {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 30px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  background-color: rgba(255, 251, 230, 1);
 
-  width: 420px;
-  height: 120px;
-  border: 1px solid $accent-color;
-  background-color: $accent-background-color;
-
-  color: $accent-color;
+  color: rgba(0, 0, 0, 1);
 
   display: flex;
   justify-content: center;
@@ -28,6 +32,24 @@
   }
 
   cursor: pointer;
+
+  @include laptop {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+
+    width: 388px;
+    height: 90px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+
+    width: 420px;
+    height: 120px;
+  }
 }
 
 .price__btn_boxShadow {
@@ -36,7 +58,14 @@
 
 .button__list {
   display: flex;
-  gap: 159px;
+
+  @include laptop {
+    gap: 20px;
+  }
+
+  @include desktop {
+    gap: 159px;
+  }
 }
 
 .btn__img {
@@ -45,15 +74,27 @@
 
 .price__table {
   padding-left: 100px;
-
   padding-right: 100px;
   padding-top: 60px;
   padding-bottom: 21px;
 
-  height: 388px;
-  border: 1px solid $accent-color;
+  border: 1px solid rgba(0, 0, 0, 1);
 
-  width: 1580px;
+  @include laptop {
+    width: 1204px;
+
+    padding: 60px;
+  }
+
+  @include desktop {
+    width: 1580px;
+
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 60px;
+    padding-bottom: 21px;
+    height: 388px;
+  }
 }
 
 .prices {
@@ -61,13 +102,23 @@
 }
 
 .price__item {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
+  @include laptop {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    padding-bottom: 30px;
+  }
 
-  padding-bottom: 39px;
+  @include desktop {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    padding-bottom: 39px;
+  }
+}
 
-  font-size: 18px;
+.price__item_upgrade {
+  padding-bottom: -30px;
 }
 
 .price__item_bold {
@@ -81,11 +132,11 @@
 }
 
 .image__people {
+  width: 75%;
   position: relative;
-  margin-right: -340px;
 }
 
 .image__bcg {
+  width: 75%;
   position: absolute;
-  margin-left: 435px;
 }

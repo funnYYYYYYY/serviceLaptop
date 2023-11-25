@@ -9,25 +9,32 @@
   display: flex;
   text-align: center;
 
-  gap: 148px;
+  @include laptop {
+    gap: 63px;
+  }
+
+  @include desktop {
+    gap: 148px;
+  }
 }
 
 .feature-list {
   width: 1445px;
 }
 
-.procces {
-  position: relative;
-}
-
 .how-we-work__title {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 21.94px;
 
   margin-bottom: 70px;
-  margin-left: 630px;
   display: contents;
+
+  @include desktop {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 .circle {
   position: relative;
@@ -38,9 +45,6 @@
   position: relative;
 
   display: inline-block;
-}
-
-.how-we-work__item {
 }
 
 .bar {
@@ -62,37 +66,33 @@
   margin-bottom: 70px;
   text-align: center;
 
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 600;
-  line-height: 57px;
-  color: $accent-color;
-}
+  line-height: 48.76px;
+  color: rgba(0, 0, 0, 1);
 
-.how-we-work__item {
+  @include desktop {
+    font-size: 48px;
+    line-height: 57px;
+  }
 }
 
 .how-we-work__information {
   margin-top: 30px;
-
-  width: 283px;
 }
 
 .how-we-work__text {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 26px;
-  width: 283px;
+  line-height: 22.4px;
+  width: 258px;
 
   margin-top: 14px;
-}
 
-.step-active {
-}
-.step-number {
-}
-.progress-bar__title {
-}
-.step-description {
-}
-.step {
+  @include desktop {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 283px;
+  }
 }

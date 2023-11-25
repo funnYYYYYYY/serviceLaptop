@@ -2,9 +2,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+
   z-index: 1000;
-  background-color: $accent-background-color;
+  background-color: rgba(255, 251, 230, 1);
 }
 
 .main {
@@ -30,25 +30,37 @@
 }
 .nav-list {
   list-style-type: none;
-  &:first-child {
-    margin-left: 50px;
+
+  @include laptop {
+    margin-left: 95px;
+    &:first-child {
+      margin-left: 40px;
+      gap: 20px;
+    }
+  }
+
+  @include desktop {
+    margin-left: 151px;
+    &:first-child {
+      margin-left: 50px;
+      gap: 30px;
+    }
   }
 
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 30px;
+
   align-items: center;
   justify-content: center;
 }
 
 .nav-list__gap {
-  gap: 75px;
+  gap: 50px;
 }
 
 .nav-list__item {
-  color: $accent-color;
-  font-size: $font-size;
+  color: rgba(0, 0, 0, 1);
 
   display: flex;
   align-items: center;
@@ -58,8 +70,13 @@
 
   &:hover,
   :focus {
-    color: rgba(255, 214, 0, 1);
+    color: rgba(0, 0, 0, 1);
     font-weight: 500;
+  }
+
+  @include desktop {
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
   }
 }
 
@@ -69,13 +86,9 @@
   align-items: center;
 }
 
-.header-list__item_margin {
-  margin-left: 147px;
-}
-
 .item-link {
   @extend %link;
-  color: $accent-color;
+  color: rgba(0, 0, 0, 1);
 }
 
 .nav-lis__id {
@@ -83,33 +96,44 @@
 }
 
 .dropbtn {
-  background-color: $accent-background-color;
+  background-color: rgba(255, 251, 230, 1);
 
-  padding: 20px;
-  font-size: 18px;
   border: none;
   cursor: pointer;
-  color: black;
+  color: rgba(0, 0, 0, 1);
 
   &:hover,
   :focus {
     color: rgba(255, 214, 0, 1);
   }
+
+  @include desktop {
+    padding: 20px;
+    font-size: 18px;
+  }
 }
 
 .dropdown {
-  position: relative;
-  margin-left: auto;
+  @include laptop {
+    margin-left: 82px;
+  }
+  @include desktop {
+    position: relative;
+    margin-left: auto;
+  }
 }
 
 .dropdown-content {
-  font-size: $font-size;
   display: none;
   position: absolute;
-  background-color: $accent-background-color;
+  background-color: rgba(255, 251, 230, 1);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   right: 0;
+
+  @include desktop {
+    font-size: 18px;
+  }
 }
 
 .dropdown-content a {
@@ -131,7 +155,7 @@
 .nav-list__link {
   position: relative;
   @extend %link;
-  color: $accent-color;
+  color: rgba(0, 0, 0, 1);
 
   &:hover,
   :focus {

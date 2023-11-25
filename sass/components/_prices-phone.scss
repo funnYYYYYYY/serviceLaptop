@@ -1,11 +1,21 @@
 .phone-price__table {
-  padding-left: 303px;
-  padding-right: 303px;
-  padding-top: 113px;
-  padding-bottom: 74px;
+  border: 1px solid rgba(0, 0, 0, 1);
 
-  height: 388px;
-  border: 1px solid $accent-color;
+  @include laptop {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 113px;
+    padding-bottom: 74px;
 
-  width: 1580px;
+    width: 1204px;
+  }
+
+  @include desktop {
+    padding-left: 303px;
+    padding-right: 303px;
+    padding-top: 113px;
+    padding-bottom: 104px;
+
+    width: 1580px;
+  }
 }

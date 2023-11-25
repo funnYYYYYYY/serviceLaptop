@@ -1,5 +1,9 @@
 .features-list {
-  display: flex;
+  display: flex; /* включаємо гнучкий контейнер */
+  justify-content: space-between; /* розподіл елементів з рівними відступами */
+  list-style: none; /* видалення стандартного оформлення списку */
+  padding: 0; /* видалення додаткових відступів */
+  margin: 0; /* видалення додаткових марджинів */
   gap: 20px;
 }
 
@@ -11,32 +15,49 @@
 .features__title {
   margin-bottom: 70px;
   text-align: center;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 57px;
-  color: $accent-color;
+  color: rgba(0, 0, 0, 1);
+
+  @include desktop {
+    font-size: 48px;
+  }
 }
+
 .features-list__item {
-  width: 513px;
+  width: 388px;
   height: 190px;
 
   border: 1px solid black;
   display: flex;
   align-items: center;
-  background: $accent-background-color;
-  padding: 20px;
+  background: rgba(255, 251, 230, 1);
+
   box-shadow: 0px 4px 15px 0px rgba(38, 50, 56, 0.35);
 
   margin-bottom: 20px;
 }
 
-.features-list__item_upgrade {
-  gap: 10px;
-}
-
 .features-list__img {
   margin-right: 20px;
   flex-shrink: 0;
+
+  @include laptop {
+    width: 100px;
+    height: 100px;
+  }
+
+  @include desktop {
+    width: 135px;
+    height: 135px;
+  }
+}
+
+.features-list__img_upgrade {
+  @include laptop {
+    height: 60px;
+  }
 }
 
 .features-list__content {
@@ -45,11 +66,14 @@
 
 .features-list__title,
 .features-list__text {
-  font-size: 18px;
   font-weight: 400;
   line-height: 25px;
 
   margin: 0;
+
+  @include desktop {
+    font-size: 18px;
+  }
 }
 
 .features-list__title {

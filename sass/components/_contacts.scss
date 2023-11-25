@@ -16,19 +16,39 @@
 }
 
 .contacts__title {
-  width: 531px;
+  @include laptop {
+    width: 443px;
 
-  font-size: 48px;
-  margin-bottom: 48px;
-  font-weight: 600;
-  line-height: 59px;
+    font-size: 40px;
+    margin-bottom: 48px;
+    font-weight: 600;
+    line-height: 48.76px;
+  }
+
+  @include desktop {
+    width: 531px;
+
+    font-size: 48px;
+    margin-bottom: 48px;
+    font-weight: 600;
+    line-height: 59px;
+  }
 }
 
 .contacts__text {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 29px;
-  margin-bottom: 57px;
+  @include laptop {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 29px;
+    margin-bottom: 26.82px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    margin-bottom: 57px;
+  }
 }
 
 .image-container {
@@ -49,19 +69,39 @@
 .form__size {
   padding-left: 30px;
 
-  font-size: 24px;
-  height: 80px;
-  width: 467px;
+  border: 2px solid rgba(0, 0, 0, 1);
 
-  border: 2px solid $accent-color;
+  @include laptop {
+    font-size: 16px;
+    line-height: 19.5px;
+    height: 60px;
+    width: 388px;
+  }
+  @include desktop {
+    font-size: 24px;
+    height: 80px;
+    width: 467px;
+    line-height: 21.94px;
+  }
 }
 
 .form__size_textarea {
-  padding-left: 30px;
-  padding-top: 30px;
-  font-size: 24px;
-  height: 230px;
-  width: 467px;
+  @include laptop {
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 16px;
+    line-height: 19.5px;
+    height: 180px;
+    width: 388px;
+
+    @include desktop {
+      padding-left: 30px;
+      padding-top: 30px;
+      font-size: 24px;
+      height: 230px;
+      width: 467px;
+    }
+  }
 }
 
 .contacts-form,

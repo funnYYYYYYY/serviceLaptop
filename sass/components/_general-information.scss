@@ -5,7 +5,13 @@
 }
 
 .calc {
-  width: calc(50%);
+  @include laptop {
+    width: calc(50%);
+  }
+
+  @include desktop {
+    width: calc(50%);
+  }
 }
 
 .general__title {
@@ -30,9 +36,16 @@
 }
 
 .title-laptop {
-  position: relative;
-  margin-top: -67px;
-  margin-left: 41px;
+  @include laptop {
+    position: relative;
+    margin-top: -55px;
+  }
+
+  @include desktop {
+    position: relative;
+    margin-top: -67px;
+    margin-left: 41px;
+  }
 }
 
 > .title-laptop__img {
@@ -43,21 +56,38 @@
 }
 
 .what-do-we-do {
-  width: 789px;
-  font-size: 60px;
-  font-weight: 800;
-  line-height: 78px;
+  @include laptop {
+    width: 789px;
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 65.83px;
+  }
+
+  @include desktop {
+    width: 789px;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 78px;
+  }
 }
 .guarantee {
   color: rgba(255, 214, 0, 1);
 }
 
 .our-specialists {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 33px;
-
   padding-top: 50px;
+
+  @include laptop {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30.8px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33px;
+  }
 }
 
 .primary__link {

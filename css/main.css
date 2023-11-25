@@ -145,6 +145,7 @@ img {
 .nav-list__item:hover,
 .nav-list__item :focus {
   color: rgb(255, 214, 0);
+  font-weight: 500;
 }
 
 .header .container {
@@ -264,7 +265,7 @@ img {
 .title-laptop {
   position: relative;
   margin-top: -67px;
-  margin-left: 48px;
+  margin-left: 41px;
 }
 
 > .title-laptop__img {
@@ -275,6 +276,7 @@ img {
 }
 
 .what-do-we-do {
+  width: 789px;
   font-size: 60px;
   font-weight: 800;
   line-height: 78px;
@@ -328,9 +330,23 @@ img {
   margin-left: 50px;
 }
 
-.social-media-list__item:hover,
-.social-media-list__item :focus {
-  background-color: rgb(255, 226, 77);
+.social__svg path {
+  stroke: black;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.social__svg:hover path, .social__svg:focus path {
+  stroke: rgb(255, 214, 0);
+}
+
+.social-svg__instagram:hover,
+:focus path {
+  stroke: rgb(255, 214, 0);
+}
+
+.social-svg__instagram {
+  margin-top: 11px;
 }
 
 .that-we-provide {
@@ -623,6 +639,7 @@ img {
 }
 
 .contacts__title {
+  width: 531px;
   font-size: 48px;
   margin-bottom: 48px;
   font-weight: 600;
@@ -706,12 +723,17 @@ img {
   color: rgb(0, 0, 0);
 }
 
+.primary-btn_upgrade {
+  width: 469px;
+}
+
 .footer__title {
   font-size: 18px;
   color: rgb(0, 0, 0);
   font-family: 500;
   line-height: 22px;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .data {

@@ -32,7 +32,7 @@
 .title-laptop {
   position: relative;
   margin-top: -67px;
-  margin-left: 48px;
+  margin-left: 41px;
 }
 
 > .title-laptop__img {
@@ -43,6 +43,7 @@
 }
 
 .what-do-we-do {
+  width: 789px;
   font-size: 60px;
   font-weight: 800;
   line-height: 78px;
@@ -85,8 +86,29 @@
 
 .social-media-list__item {
   @extend %list;
-  &:hover,
-  :focus {
-    background-color: rgba(255, 226, 77, 1);
+}
+
+.social__svg {
+  path {
+    stroke: black;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
   }
+
+  &:hover,
+  &:focus {
+    path {
+      stroke: rgba(255, 214, 0, 1);
+    }
+  }
+}
+
+.social-svg__instagram:hover,
+:focus path {
+  stroke: rgba(255, 214, 0, 1);
+}
+
+.social-svg__instagram {
+  margin-top: 11px;
 }

@@ -557,6 +557,11 @@ img {
   background-color: rgb(255, 214, 0);
 }
 
+.price__btn_boxShadow {
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(38, 50, 56, 0.35);
+          box-shadow: 0px 4px 4px 0px rgba(38, 50, 56, 0.35);
+}
+
 .button__list {
   display: -webkit-box;
   display: -ms-flexbox;

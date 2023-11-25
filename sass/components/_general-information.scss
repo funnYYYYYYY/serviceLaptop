@@ -23,10 +23,16 @@
 }
 
 .title-lampot__img {
-  width: 100%;
-  width: 70%;
-  margin-left: 595px;
-  margin-top: -223px;
+  @include laptop {
+    width: 60%;
+    margin-left: 595px;
+  }
+
+  @include desktop {
+    width: 60%;
+    margin-left: 595px;
+    margin-top: -223px;
+  }
 }
 
 .title-lampot__eclipse {
@@ -44,7 +50,7 @@
   @include desktop {
     position: relative;
     margin-top: -67px;
-    margin-left: 41px;
+    margin-left: -50px;
   }
 }
 

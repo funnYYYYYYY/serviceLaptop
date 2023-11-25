@@ -1,6 +1,7 @@
 .primary-btn {
   border: none;
-  height: 65px;
+  width: 388px;
+  height: 60px;
 
   z-index: 100;
 
@@ -12,7 +13,7 @@
   &:hover,
   :focus {
     background-color: rgba(255, 226, 77, 1);
-    box-shadow: 6px 9px 0px -2px rgba(255, 251, 230, 1);
+    box-shadow: 6px 9px 0px -2px rgba(0, 0, 0, 1);
     color: rgba(0, 0, 0, 1);
   }
 
@@ -20,9 +21,6 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 19.5px;
-
-    width: 388px;
-    height: 60px;
   }
 
   @include desktop {
@@ -30,7 +28,7 @@
     font-size: 18px;
     line-height: 22px;
 
-    width: 469px;
+    width: 250px;
     height: 65px;
   }
 }

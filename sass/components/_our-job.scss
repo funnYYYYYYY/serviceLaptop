@@ -5,6 +5,8 @@
   @extend %list;
   display: flex;
   gap: 45px;
+
+  margin-top: -100px;
 }
 .that-we-provide__list {
   font-weight: 400;

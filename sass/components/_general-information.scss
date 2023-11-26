@@ -8,7 +8,7 @@
 
 .calc {
   @include mobile {
-    width: calc(50%);
+    width: calc(30%);
   }
   @include laptop {
     width: calc(50%);
@@ -25,6 +25,11 @@
 
 .title-lampot__bcg {
   position: absolute;
+  display: none;
+
+  @include laptop {
+    display: block;
+  }
 }
 
 .title-lampot__img {
@@ -130,19 +135,36 @@
 
 .primary__link {
   @extend %link;
+  width: 250px;
+  height: 60px;
   justify-content: center;
+  align-items: center;
   align-items: center;
   display: flex;
 }
 
 .that-we-provide {
-  margin-top: 100px;
+  margin-top: 170px;
+  display: block;
+
+  @include laptop {
+    margin-top: 100px;
+    display: flex;
+  }
 }
 
 .general__social {
-  margin-top: 85px;
+  margin-top: 34px;
   display: flex;
   align-items: center;
+  width: 250px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+
+  @include laptop {
+    margin-top: 85px;
+  }
 }
 
 .social-media-list {
@@ -154,6 +176,11 @@
 
 .social-media-list__item {
   @extend %list;
+  display: none;
+
+  @include laptop {
+    display: flex;
+  }
 }
 
 .social__svg {
@@ -179,4 +206,25 @@
 
 .social-svg__instagram {
   margin-top: 13px;
+}
+
+.title-mobile {
+  margin-top: -28px;
+  margin-left: 24px;
+}
+
+.bcg-mobile {
+  position: absolute;
+  margin-top: -4px;
+  margin-left: 93px;
+
+  @include laptop {
+    display: none;
+  }
+}
+
+.info-mobile {
+  @include laptop {
+    display: none;
+  }
 }

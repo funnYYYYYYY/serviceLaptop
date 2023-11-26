@@ -1,9 +1,10 @@
 .primary-btn {
   border: none;
-  width: 388px;
-  height: 60px;
-
   z-index: 100;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14.63px;
 
   color: rgba(246, 246, 246, 1);
   background-color: rgba(0, 0, 0, 1);
@@ -18,9 +19,11 @@
   }
 
   @include laptop {
+    width: 250px;
     font-weight: 700;
     font-size: 16px;
     line-height: 19.5px;
+    display: flex;
   }
 
   @include desktop {

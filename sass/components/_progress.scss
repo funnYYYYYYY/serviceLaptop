@@ -60,7 +60,8 @@
   }
 }
 
-.circle::after {
+/* Стилі для псевдоелемента .circle */
+.how-we-work__item .circle::after {
   content: "";
   position: absolute;
   bottom: -88px;
@@ -68,11 +69,11 @@
   height: 93px;
   width: 1px;
   background-color: #ffd600;
-
   transform: translateX(-50%);
 }
 
-.circle:last-child::after {
+/* Стилі для приховування лінії на останньому .how-we-work__item */
+.how-we-work__item:last-child .circle::after {
   display: none;
 }
 

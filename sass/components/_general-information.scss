@@ -1,10 +1,15 @@
 .information {
   display: flex;
 
-  margin-top: 65px;
+  @include laptop {
+    margin-top: 65px;
+  }
 }
 
 .calc {
+  @include mobile {
+    width: calc(50%);
+  }
   @include laptop {
     width: calc(50%);
   }
@@ -23,7 +28,12 @@
 }
 
 .title-lampot__img {
+  @include mobile {
+    display: none;
+  }
+
   @include laptop {
+    display: block;
     width: 60%;
     margin-left: 595px;
   }
@@ -42,7 +52,11 @@
 }
 
 .title-laptop {
+  display: none;
+
   @include laptop {
+    display: block;
+
     position: relative;
     margin-top: -55px;
   }
@@ -54,6 +68,14 @@
   }
 }
 
+.title-laptop__mobile {
+  position: relative;
+
+  @include laptop {
+    display: none;
+  }
+}
+
 > .title-laptop__img {
   position: relative;
   width: 70%;
@@ -62,6 +84,11 @@
 }
 
 .what-do-we-do {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 27px;
+  width: 175px;
+
   @include laptop {
     width: 789px;
     font-size: 54px;
@@ -83,7 +110,12 @@
 .our-specialists {
   padding-top: 50px;
 
+  @include mobile {
+    display: none;
+  }
+
   @include laptop {
+    display: block;
     font-size: 22px;
     font-weight: 500;
     line-height: 30.8px;

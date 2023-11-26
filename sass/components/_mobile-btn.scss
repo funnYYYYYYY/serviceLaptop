@@ -1,0 +1,19 @@
+.mobile-btn {
+  width: 300px;
+  height: 52px;
+  background-color: rgba(255, 214, 0, 1);
+  border: none;
+  color: rgba(0, 0, 0, 1);
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.07px;
+
+  margin-bottom: 30px;
+
+  @include laptop {
+    display: none;
+  }
+}

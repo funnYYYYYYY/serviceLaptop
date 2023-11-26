@@ -1,13 +1,17 @@
 .price__title {
-  margin-bottom: 70px;
+  margin-bottom: 30px;
   text-align: center;
-
   color: rgba(0, 0, 0, 1);
 
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48.76px;
+
   @include laptop {
-    font-size: 40px;
+    margin-bottom: 70px;
+    font-size: 22px;
     font-weight: 600;
-    line-height: 48.76px;
+    line-height: 26.07px;
   }
 
   @include desktop {
@@ -53,14 +57,20 @@
 }
 
 .price__btn_boxShadow {
+  display: none;
   box-shadow: 0px 4px 4px 0px rgba(38, 50, 56, 0.35);
+
+  @include laptop {
+    display: flex;
+  }
 }
 
 .button__list {
-  display: flex;
+  display: block;
 
   @include laptop {
     gap: 20px;
+    display: flex;
   }
 
   @include desktop {
@@ -73,15 +83,17 @@
 }
 
 .price__table {
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 60px;
-  padding-bottom: 21px;
-
-  border: 1px solid rgba(0, 0, 0, 1);
+  display: none;
 
   @include laptop {
-    width: 1204px;
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 60px;
+    padding-bottom: 21px;
+
+    border: 1px solid rgba(0, 0, 0, 1);
+    width: 1164px;
 
     padding: 60px;
   }
@@ -98,10 +110,17 @@
 }
 
 .prices {
-  margin-top: 65px;
+  @include laptop {
+    margin-top: 65px;
+  }
 }
 
 .price__item {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14.63px;
+  padding-bottom: 15px;
+
   @include laptop {
     font-size: 16px;
     font-weight: 400;
@@ -122,8 +141,13 @@
 }
 
 .price__item_bold {
-  line-height: 22px;
-  font-weight: 900;
+  line-height: 14.63px;
+  font-weight: 600;
+
+  @include laptop {
+    line-height: 22px;
+    font-weight: 900;
+  }
 }
 
 .price__list {
@@ -139,4 +163,8 @@
 .image__bcg {
   width: 75%;
   position: absolute;
+}
+
+.price-table__mobile {
+  width: 300px;
 }

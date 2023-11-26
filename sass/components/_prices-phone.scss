@@ -1,13 +1,15 @@
 .phone-price__table {
-  border: 1px solid rgba(0, 0, 0, 1);
+  display: none;
 
   @include laptop {
+    display: block;
     padding-left: 200px;
     padding-right: 200px;
     padding-top: 113px;
     padding-bottom: 74px;
+    border: 1px solid rgba(0, 0, 0, 1);
 
-    width: 1204px;
+    width: 1163px;
   }
 
   @include desktop {

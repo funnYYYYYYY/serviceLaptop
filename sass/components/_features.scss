@@ -141,3 +141,11 @@
     margin-bottom: 0;
   }
 }
+
+.features-list__div {
+  display: none;
+  @include laptop {
+    display: block;
+    text-align: left;
+  }
+}

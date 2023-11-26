@@ -5,12 +5,14 @@
 }
 
 .how-we-work__list {
+  display: block;
+
   @extend %list;
-  display: flex;
-  text-align: center;
 
   @include laptop {
+    display: flex;
     gap: 63px;
+    text-align: center;
   }
 
   @include desktop {
@@ -23,12 +25,19 @@
 }
 
 .how-we-work__title {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21.94px;
-
-  margin-bottom: 70px;
   display: contents;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14.63px;
+
+  @include laptop {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.94px;
+
+    margin-bottom: 70px;
+  }
 
   @include desktop {
     font-weight: 600;
@@ -38,38 +47,78 @@
 }
 .circle {
   position: relative;
-  width: 131px;
-  height: 131px;
   background-color: rgba(255, 214, 0, 1);
   border-radius: 50%;
-  position: relative;
-
   display: inline-block;
+
+  width: 40px;
+  height: 40px;
+
+  @include laptop {
+    width: 131px;
+    height: 131px;
+  }
+}
+
+.circle::after {
+  content: "";
+  position: absolute;
+  bottom: -88px;
+  left: 50%;
+  height: 93px;
+  width: 1px;
+  background-color: #ffd600;
+
+  transform: translateX(-50%);
+}
+
+.circle:last-child::after {
+  display: none;
 }
 
 .bar {
-  width: 300px;
-  height: 5px;
-  background-color: rgba(255, 214, 0, 1);
-  position: absolute;
-  top: 50%;
-  left: 100%;
+  @include laptop {
+    width: 300px;
+    height: 5px;
+    background-color: rgba(255, 214, 0, 1);
+    position: absolute;
+    top: 50%;
+    left: 100%;
+  }
 }
 
 .circle__number {
   position: absolute;
-  margin-top: 30px;
-  margin-left: 38px;
+  margin-top: 6px;
+  margin-left: 12px;
+
+  width: 16px;
+  height: 28px;
+
+  @include laptop {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 38px;
+    width: 55px;
+    height: 70px;
+  }
 }
 
 .how-we-work__job {
-  margin-bottom: 70px;
   text-align: center;
 
-  font-size: 40px;
+  font-size: 22px;
   font-weight: 600;
-  line-height: 48.76px;
+  line-height: 26.07px;
   color: rgba(0, 0, 0, 1);
+
+  @include laptop {
+    margin-bottom: 70px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48.76px;
+    color: rgba(0, 0, 0, 1);
+  }
 
   @include desktop {
     font-size: 48px;
@@ -79,20 +128,45 @@
 
 .how-we-work__information {
   margin-top: 30px;
+
+  @include mobile {
+    margin-left: 30px;
+  }
+
+  @include desktop {
+    margin-left: 0;
+  }
 }
 
 .how-we-work__text {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 22.4px;
-  width: 258px;
+  line-height: 16.8px;
+  width: 163px;
+  margin-top: 10px;
 
-  margin-top: 14px;
+  @include laptop {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    width: 258px;
+    margin-top: 14px;
+  }
 
   @include desktop {
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
     width: 283px;
+  }
+}
+
+.how-we-work__item {
+  display: flex;
+  align-items: center;
+
+  @include laptop {
+    display: block;
+    align-items: none;
   }
 }

@@ -703,6 +703,7 @@ img {
 @media screen and (min-width: 1200px) {
   .general__social {
     margin-top: 85px;
+    width: 500px;
   }
 }
 
@@ -1636,16 +1637,19 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 65px;
   }
 }
-@media screen and (min-width: 1800px) {
-  .primary-btn {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    width: 250px;
-    height: 65px;
+
+@media screen and (min-width: 1200px) {
+  .primary-btn_upgrade {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 388px;
   }
 }
 

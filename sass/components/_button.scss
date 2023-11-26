@@ -25,15 +25,14 @@
     font-size: 16px;
     line-height: 19.5px;
     display: flex;
-    height: 65px;
   }
+}
 
-  @include desktop {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-
-    width: 250px;
-    height: 65px;
+.primary-btn_upgrade {
+  @include laptop {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 388px;
   }
 }

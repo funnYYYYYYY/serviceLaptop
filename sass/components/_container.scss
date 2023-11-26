@@ -15,6 +15,11 @@
   @include mobile {
     width: 320px;
   }
+
+  @include tablet {
+    width: 767px;
+  }
+
   @include laptop {
     width: 1204px;
     margin-left: auto;

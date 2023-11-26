@@ -72,6 +72,11 @@ img {
     width: 320px;
   }
 }
+@media screen and (min-width: 767px) {
+  .container {
+    width: 767px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .container {
     width: 1204px;
@@ -767,6 +772,11 @@ img {
   }
 }
 
+@media screen and (min-width: 767px) {
+  .info-mobile {
+    width: 90%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .info-mobile {
     display: none;
@@ -1604,7 +1614,6 @@ img {
 
 .map-mobile {
   margin-top: 30px;
-  margin-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1694,7 +1703,6 @@ img {
 }
 
 .info {
-  width: 43%;
   position: relative;
 }
 
@@ -1712,6 +1720,7 @@ img {
 }
 
 .info__item {
+  width: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

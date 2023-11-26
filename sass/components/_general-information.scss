@@ -225,6 +225,9 @@
 }
 
 .info-mobile {
+  @include tablet {
+    width: 90%;
+  }
   @include laptop {
     display: none;
   }

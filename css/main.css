@@ -65,7 +65,7 @@ img {
     display: block;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .container {
     width: 320px;
   }
@@ -90,7 +90,7 @@ img {
   z-index: 1000;
   background-color: rgb(255, 251, 230);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .header {
     width: 320px;
     height: 30px;
@@ -105,7 +105,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .main {
     padding-top: 50px;
   }
@@ -128,7 +128,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .logo_img {
     width: 73px;
     height: 25px;
@@ -325,7 +325,7 @@ img {
   position: absolute;
   margin-left: -18px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .dropbtn__arrow {
     width: 15px;
     height: 15px;
@@ -516,7 +516,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .calc {
     width: 30%;
   }
@@ -546,7 +546,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .title-lampot__img {
     display: none;
   }
@@ -636,7 +636,7 @@ img {
 .our-specialists {
   padding-top: 50px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .our-specialists {
     display: none;
   }
@@ -1043,7 +1043,6 @@ img {
   }
 }
 
-/* Стилі для псевдоелемента .circle */
 .how-we-work__item .circle::after {
   content: "";
   position: absolute;
@@ -1056,7 +1055,11 @@ img {
           transform: translateX(-50%);
 }
 
-/* Стилі для приховування лінії на останньому .how-we-work__item */
+@media screen and (min-width: 1200px) {
+  .how-we-work__item .circle::after {
+    display: none;
+  }
+}
 .how-we-work__item:last-child .circle::after {
   display: none;
 }
@@ -1115,7 +1118,7 @@ img {
 .how-we-work__information {
   margin-top: 30px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .how-we-work__information {
     margin-left: 30px;
   }

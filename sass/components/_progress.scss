@@ -60,7 +60,6 @@
   }
 }
 
-/* Стилі для псевдоелемента .circle */
 .how-we-work__item .circle::after {
   content: "";
   position: absolute;
@@ -71,8 +70,12 @@
   background-color: #ffd600;
   transform: translateX(-50%);
 }
+@include laptop {
+  .how-we-work__item .circle::after {
+    display: none;
+  }
+}
 
-/* Стилі для приховування лінії на останньому .how-we-work__item */
 .how-we-work__item:last-child .circle::after {
   display: none;
 }

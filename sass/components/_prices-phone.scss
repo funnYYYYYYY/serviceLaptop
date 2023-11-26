@@ -21,3 +21,9 @@
     width: 1580px;
   }
 }
+
+.price-table__mobile {
+  @include laptop {
+    display: none;
+  }
+}

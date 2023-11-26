@@ -156,13 +156,22 @@
 }
 
 .image__people {
-  width: 75%;
-  position: relative;
+  display: none;
+  @include laptop {
+    display: block;
+    width: 75%;
+    position: relative;
+  }
 }
 
 .image__bcg {
-  width: 75%;
-  position: absolute;
+  display: none;
+
+  @include laptop {
+    display: block;
+    width: 75%;
+    position: absolute;
+  }
 }
 
 .price-table__mobile {

@@ -26,9 +26,11 @@
 }
 
 .data__title {
+  display: none;
   margin-bottom: 68px;
 
   @include laptop {
+    display: block;
     font-size: 40px;
     font-weight: 600;
     line-height: 48.76px;
@@ -42,9 +44,13 @@
 }
 
 .info-bcg__img {
-  margin-top: -300px;
-  margin-left: -270px;
-  position: absolute;
+  display: none;
+  @include laptop {
+    display: block;
+    margin-top: -300px;
+    margin-left: -270px;
+    position: absolute;
+  }
 }
 
 .info__title {
